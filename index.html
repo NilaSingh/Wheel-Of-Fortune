@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel of Fortune!</title>
+    <h1 style="text-align:center;font-size:7vw;">Wheel Of Fortune</h1>
+    <p id="random" style="text-align:center;font-size:5vw;"></p>
+    <p style="text-align: center"><button id="button" style="width:100px; height:50px" onclick="startGame()"><p style="font-size:medium">Start</p></button></p>
+    <form id="form" name="form" action="action_page.php" style="display: none; text-align: center">
+        <label for="guess1">First Guess:</label><br>
+        <input type="text" id="guess1" name="guess1" placeholder="Vowel"><br>
+
+        <label for="guess2">Second Guess</label><br>
+        <input type="text" id="guess2" name="guess2" placeholder="Constanant"><br>
+
+        <label for="guess3">Third Guess</label><br>
+        <input type="text" id="guess3" name="guess3" placeholder="Constanant"><br>
+        
+        <label for="guess4">Fourth Guess</label><br>
+        <input type="text" id="guess4" name="guess4" placeholder="Constanant"><br><br>
+        <input id="submitletters" type="submit" value="Submit"><br><br>
+      </form> 
+
+      <form id="wordform" name="wordform" action="action_page.php" style="display: none; text-align: center">
+        <input  type="text" id="word" name="word" placeholder="Word">
+        <input id="submitword" type="submit" value="Submit">
+      </form>
+    <script src="./js/randomWord.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+</body>
+</html>
